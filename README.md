@@ -23,10 +23,11 @@ Everything below is typed into a terminal inside VS Code. To open one: menu **Te
 In the VS Code terminal, paste:
 
 ```bash
-claude plugin marketplace add https://github.com/ThomasMouquot2/brydge-team-skills.git
+claude plugin marketplace add ThomasMouquot2/brydge-team-skills
 ```
 
-You should see `Successfully added marketplace: brydge-team-skills`.
+You should see `Successfully added marketplace: brydge-team-skills`. If that line fails, use the full address
+instead: `claude plugin marketplace add https://github.com/ThomasMouquot2/brydge-team-skills.git`
 
 ## 3. Install the plugins for your team
 
