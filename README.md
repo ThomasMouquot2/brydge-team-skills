@@ -11,37 +11,12 @@ connections) that you install in one step.
 
 ---
 
-## 1. Before you start (once per laptop)
+## 1. Before you start
 
-You need:
+All you need is **Claude Code in VS Code**, set up during your training. No GitHub account and no sign-in are needed.
 
-1. **Claude Code in VS Code**, set up during your training.
-2. **A GitHub account with access to this repository.** This repository is private. Send your GitHub username to your
-   Brydge trainer and accept the email invitation.
-3. **Your laptop signed in to GitHub**, so Claude Code can download the plugins. In VS Code, open a terminal
-   (**View > Terminal**) and paste:
-
-   **Windows (PowerShell)**
-
-   ```powershell
-   winget install --id GitHub.cli -e
-   ```
-
-   Close the terminal, open a new one, then:
-
-   ```powershell
-   gh auth login
-   ```
-
-   **Mac (Terminal)**
-
-   ```bash
-   brew install gh
-   gh auth login
-   ```
-
-   Answer the questions like this: **GitHub.com** > **HTTPS** > **Yes** (authenticate Git) > **Login with a web
-   browser**. Copy the code it shows, press Enter, and approve in the browser.
+Everything below is typed into a terminal inside VS Code. To open one: menu **Terminal > New Terminal**
+(Windows Ctrl and backtick, Mac Cmd and backtick).
 
 ## 2. Add the Brydge marketplace (once)
 
@@ -209,8 +184,8 @@ THIRD_PARTY_NOTICES.md            source, licence and every change for copied fi
 - Never copy `xlsx`, `docx`, `pptx` or `pdf` into this repository. Their licence does not allow it.
 - Anything copied from elsewhere keeps its licence text in `LICENSES/` and gets an entry in THIRD_PARTY_NOTICES.md,
   including every change.
-- Never commit keys, `.env` files or client data. `.gitignore` blocks the common cases.
-- Keep this README free of client names. Staff from different clients can read it.
+- **This repository is public.** Anything committed is visible to everyone the moment it is pushed. Never commit keys,
+  `.env` files, client data or client names. `.gitignore` blocks the common file types, not your judgement.
 
 **Adding a plugin for one client or team**
 
@@ -221,5 +196,5 @@ THIRD_PARTY_NOTICES.md            source, licence and every change for copied fi
 
 **Access**
 
-Collaborators on a repository owned by a personal GitHub account can push changes as well as read. To give staff
-read-only access, move this repository to a GitHub organization and give staff the **Read** role.
+The repository is public so staff can install without a GitHub account. Only people with push access to
+`ThomasMouquot2/brydge-team-skills` can change what staff download, so keep that list to Brydge.
