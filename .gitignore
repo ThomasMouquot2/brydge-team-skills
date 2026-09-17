@@ -1,0 +1,17 @@
+# Never commit secrets or local tool state
+.env
+.env.*
+credentials*.json
+token*.json
+*.pem
+*.key
+
+# Python and editor noise
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

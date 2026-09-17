@@ -1,0 +1,17 @@
+{
+  "name": "brydge-inbox",
+  "displayName": "Brydge Inbox",
+  "description": "Opt-in. Inbox triage, deliverability checks (SPF, DKIM, DMARC) and compliance scans. Needs a mail connection and brydge-essentials.",
+  "author": {
+    "name": "Brydge Group",
+    "url": "https://github.com/ThomasMouquot2/brydge-team-skills"
+  },
+  "homepage": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "repository": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "inbox",
+    "deliverability"
+  ]
+}

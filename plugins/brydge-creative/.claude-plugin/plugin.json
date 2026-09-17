@@ -1,0 +1,17 @@
+{
+  "name": "brydge-creative",
+  "displayName": "Brydge Creative",
+  "description": "Image generation and editing with Google Gemini (banana) and anti-generic web page design (design-taste-frontend).",
+  "author": {
+    "name": "Brydge Group",
+    "url": "https://github.com/ThomasMouquot2/brydge-team-skills"
+  },
+  "homepage": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "repository": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "license": "MIT",
+  "keywords": [
+    "images",
+    "design",
+    "web pages"
+  ]
+}

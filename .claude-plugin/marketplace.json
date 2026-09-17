@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "brydge-team-skills",
+  "description": "Brydge Group's vetted skills and plugins for client teams. Our own plugins live in ./plugins; third-party plugins are referenced from their original source and never copied.",
+  "owner": {
+    "name": "Brydge Group",
+    "url": "https://github.com/ThomasMouquot2/brydge-team-skills"
+  },
+  "plugins": [
+    {
+      "name": "brydge-essentials",
+      "source": "./plugins/brydge-essentials",
+      "description": "For every team: write emails, review emails before sending, and build HTML slide decks.",
+      "category": "productivity",
+      "keywords": ["email", "slides", "presentations"]
+    },
+    {
+      "name": "brydge-comms",
+      "source": "./plugins/brydge-comms",
+      "description": "Turn one piece of content into newsletters, Instagram and Facebook posts and a posting calendar; translate and localise posts; keep a brand voice; make charts.",
+      "category": "productivity",
+      "keywords": ["newsletter", "social media", "translation", "brand voice", "charts"]
+    },
+    {
+      "name": "brydge-creative",
+      "source": "./plugins/brydge-creative",
+      "description": "Generate and edit images with Google Gemini (needs a free Google AI key) and design web pages that do not look AI-generated.",
+      "category": "design",
+      "keywords": ["images", "design", "web pages"]
+    },
+    {
+      "name": "brydge-inbox",
+      "source": "./plugins/brydge-inbox",
+      "description": "Opt-in. Inbox triage, email deliverability checks (SPF, DKIM, DMARC) and compliance scans. Needs a mail connection; install brydge-essentials too.",
+      "category": "productivity",
+      "keywords": ["email", "inbox", "deliverability"]
+    },
+
+    {
+      "name": "xlsx",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/xlsx", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Create, read and edit Excel spreadsheets with formulas and formatting.",
+      "category": "documents"
+    },
+    {
+      "name": "docx",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/docx", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Create and edit Word documents, including tracked changes and comments.",
+      "category": "documents"
+    },
+    {
+      "name": "pptx",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/pptx", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Create and edit PowerPoint presentations.",
+      "category": "documents"
+    },
+    {
+      "name": "pdf",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/pdf", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Read, fill, merge, split and create PDF files.",
+      "category": "documents"
+    },
+    {
+      "name": "internal-comms",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/internal-comms", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Staff updates, newsletters, status reports and FAQs in a consistent house format.",
+      "category": "productivity"
+    },
+    {
+      "name": "canvas-design",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/canvas-design", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Posters and one-page visual designs exported as PNG or PDF.",
+      "category": "design"
+    },
+    {
+      "name": "discernment-nudge",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/discernment-nudge", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Adds two or three short questions after a substantive answer so you check the facts before you use it.",
+      "category": "learning"
+    },
+    {
+      "name": "academy-guide",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/skills.git", "path": "skills/academy-guide", "ref": "main" },
+      "strict": false,
+      "skills": ["./"],
+      "description": "Anthropic. Points you to the right Claude Academy course or tutorial when you ask how to do something.",
+      "category": "learning"
+    },
+    {
+      "name": "skill-creator",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/skill-creator",
+        "ref": "main"
+      },
+      "description": "Anthropic. Build your own skill step by step, then test and improve it.",
+      "category": "development"
+    },
+    {
+      "name": "frontend-design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/frontend-design",
+        "ref": "main"
+      },
+      "description": "Anthropic. Distinctive, production-quality web pages and components.",
+      "category": "design"
+    },
+    {
+      "name": "playwright",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "external_plugins/playwright",
+        "ref": "main"
+      },
+      "description": "Microsoft, via Anthropic's directory. Lets Claude open a browser, click through a website, fill forms and take screenshots.",
+      "category": "development"
+    },
+    {
+      "name": "firecrawl",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/firecrawl/firecrawl-claude-plugin.git",
+        "ref": "main",
+        "sha": "ed0161455938240010539e2cefb7b785352b3746"
+      },
+      "description": "Firecrawl. Read, search and crawl websites. Needs a Firecrawl API key.",
+      "category": "research"
+    },
+    {
+      "name": "canva",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/canva-sdks/canva-skills.git",
+        "path": "plugins/canva",
+        "ref": "main",
+        "sha": "b56291ea0a36d0a941e1478b47959be5f1771dee"
+      },
+      "description": "Canva. Create, resize and brand-check Canva designs. Needs a Canva account.",
+      "category": "design"
+    },
+    {
+      "name": "last30days",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mvanhorn/last30days-skill.git",
+        "ref": "v3.24.0",
+        "sha": "ca9d415e66073b17702f385d6886934097aec0e7"
+      },
+      "description": "Matt Van Horn. What people said about a topic in the last 30 days on Reddit, Hacker News, YouTube and more.",
+      "category": "research"
+    },
+    {
+      "name": "anti-slop",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/AgriciDaniel/anti-slop.git",
+        "path": "anti-slop-plugin",
+        "ref": "main",
+        "sha": "7b2b0f4b1835d0a102878e5b9f70ae22f69b47c1"
+      },
+      "description": "Daniel Agrici. Reviews drafts for generic AI-sounding writing and reports what to fix. Runs a Python check after every file write.",
+      "category": "productivity"
+    }
+  ]
+}

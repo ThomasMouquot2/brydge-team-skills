@@ -1,0 +1,17 @@
+{
+  "name": "brydge-essentials",
+  "displayName": "Brydge Essentials",
+  "description": "For every team: write emails (email-write), review emails before sending (email-review) and build HTML slide decks (frontend-slides).",
+  "author": {
+    "name": "Brydge Group",
+    "url": "https://github.com/ThomasMouquot2/brydge-team-skills"
+  },
+  "homepage": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "repository": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "slides",
+    "presentations"
+  ]
+}

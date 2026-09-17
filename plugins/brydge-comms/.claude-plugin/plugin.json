@@ -1,0 +1,19 @@
+{
+  "name": "brydge-comms",
+  "displayName": "Brydge Comms",
+  "description": "Newsletters, Instagram and Facebook posts and a posting calendar from one piece of content; translation and localisation; brand voice; charts.",
+  "author": {
+    "name": "Brydge Group",
+    "url": "https://github.com/ThomasMouquot2/brydge-team-skills"
+  },
+  "homepage": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "repository": "https://github.com/ThomasMouquot2/brydge-team-skills",
+  "license": "MIT",
+  "keywords": [
+    "newsletter",
+    "social media",
+    "translation",
+    "brand voice",
+    "charts"
+  ]
+}
